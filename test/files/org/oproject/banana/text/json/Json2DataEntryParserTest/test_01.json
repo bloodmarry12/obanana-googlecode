@@ -1,0 +1,19 @@
+{
+    "TEST" : [{
+        "COL_1" : "VALUE_1",                                     /*"" COMMENTS_1*/
+        "COL_2" : "VALUE_2",                                     /*"" COMMENTS_2*/
+        "COL_3" : "VALUE_3",                                     /*"" COMMENTS_3*/
+        "COL_4" : "VALUE_4"                                      /*"" COMMENTS_4*/
+    },{
+        "COL_1" : "VALUE_1",                                     /*"" COMMENTS_1*/
+        "COL_2" : "VALUE_2",                                     /*"" COMMENTS_2*/
+        "COL_3" : "VALUE_3",                                     /*"" COMMENTS_3*/
+        "COL_4" : "VALUE_4"                                      /*"" COMMENTS_4*/
+    }], 
+    "USER" : [{
+        "ID" : "123",                                        
+        "NAME" : 456,                                      /*"" COMMENTS_2*/
+        "TYPE" : "FUNC(789)",                                      /*"" COMMENTS_3*/
+        "GMT_CREATE" : "123"                                 /*"" COMMENTS_4*/
+    }]
+}

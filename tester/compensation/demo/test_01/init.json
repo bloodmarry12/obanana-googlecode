@@ -1,0 +1,24 @@
+{
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "#executeSQL("select 'SYSDATE' FROM DUAL")",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}

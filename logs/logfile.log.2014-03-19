@@ -1,0 +1,250 @@
+2014-19-03 10:11:10 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:11:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:11:12 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using $project $name to render this.
+2014-19-03 10:12:24 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:12:25 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:12:25 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD to render this.
+2014-19-03 10:13:26 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:13:27 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:19:09 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:19:09 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:41:06 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:41:07 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:42:29 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:42:30 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 10:59:48 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 10:59:49 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 11:00:19 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 11:00:20 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 11:01:13 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 11:01:13 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 11:09:46 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 11:09:47 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 11:12:18 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 11:12:18 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 13:38:53 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 13:38:53 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 13:42:12 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 13:42:12 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 13:43:00 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 13:43:01 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 13:52:53 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 13:52:54 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 14:36:51 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 14:36:52 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 14:36:52 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID) values (1)
+2014-19-03 14:38:24 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 14:38:24 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 14:38:24 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID, NAME) values (1, 'AOHAI.LI')
+2014-19-03 14:39:10 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 14:39:10 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 14:39:11 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID, NAME, FK) values (1, 'AOHAI.LI', SYSDATE)
+2014-19-03 15:01:04 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:01:04 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:01:05 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from USER where ID = 1 and NAME = 'AOHAI.LI' and FK = SYSDATE and 
+2014-19-03 15:03:09 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:03:10 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:03:10 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from USER where ID = 1 and NAME = 'AOHAI.LI' and FK = SYSDATE 
+2014-19-03 15:04:10 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:04:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:04:11 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from USER where ID = 1 and NAME = 'AOHAI.LI' and FK = SYSDATE 
+2014-19-03 15:04:27 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:04:27 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:04:28 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID, NAME, FK) values (1, 'AOHAI.LI', SYSDATE)
+2014-19-03 15:05:13 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:05:14 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:05:14 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID, NAME, FK) values (1, 'AOHAI.LI', SYSDATE)
+2014-19-03 15:05:30 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:05:30 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:05:31 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD to render this.
+2014-19-03 15:05:45 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:05:45 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:05:45 [DEBUG]- DefaultSqlExecutor         - 执行SQL:SELECT SYSDATE FROM DUAL
+2014-19-03 15:05:46 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901o95g7jxkqsv2|53fcc0a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901o95g7jxkqsv2|53fcc0a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 15:05:48 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 15:05:48.0}]
+2014-19-03 15:06:10 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:06:10 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:06:11 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD to render this.
+2014-19-03 15:10:43 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:10:43 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:10:44 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from USER where ID = 1 and NAME = 'AOHAI.LI' and FK = SYSDATE 
+2014-19-03 15:11:31 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 15:11:31 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 15:11:31 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from USER where ID = 1 and NAME = 'AOHAI.LI' and FK = SYSDATE 
+2014-19-03 16:06:54 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:06:55 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:06:56 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD to render this.
+2014-19-03 16:06:56 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD to render this.
+2014-19-03 16:07:25 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:07:26 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:07:27 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:07:27 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this.
+2014-19-03 16:32:45 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:32:45 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:32:46 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:32:46 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 16:33:34 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:33:34 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:33:35 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:33:35 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 16:43:55 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:43:55 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:44:07 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:44:07 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:46:11 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:46:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:48:53 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:48:53 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:50:31 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:50:31 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:50:32 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:50:32 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 16:50:42 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:50:42 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:50:56 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:51:05 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 16:51:55 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:51:56 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:57:10 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:57:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:57:29 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:57:29 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:58:19 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 16:58:20 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 16:58:20 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 16:58:20 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:00:23 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 17:00:23 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 17:00:24 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 17:00:24 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:00:24 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:00:30 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 17:00:30 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 17:00:31 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 17:00:31 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:00:31 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:06:17 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 17:06:18 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 17:06:18 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 17:06:18 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:06:18 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: #executeSQL("select SYSDATE FROM DUAL")
+2014-19-03 17:07:19 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 17:07:20 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 17:07:20 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 17:07:31 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 
+2014-19-03 17:07:32 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 
+2014-19-03 17:13:38 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 17:13:38 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 17:13:39 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 17:13:39 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. executeQuery......
+2014-19-03 17:13:39 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: executeQuery......
+2014-19-03 18:06:02 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:06:02 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:06:03 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:06:03 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. executeQuery......
+2014-19-03 18:06:03 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: executeQuery......
+2014-19-03 18:07:58 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:07:59 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:07:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:07:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. executeQuery......
+2014-19-03 18:07:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: executeQuery......
+2014-19-03 18:16:23 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:16:23 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:16:24 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:16:24 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:16:24 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901ofym1tpxwux5|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901ofym1tpxwux5|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:16:26 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:16:26.0}]
+2014-19-03 18:16:26 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 2014-03-19 18:16:26.0
+2014-19-03 18:16:26 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:16:26 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:16:26.0}]
+2014-19-03 18:16:26 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 2014-03-19 18:16:26.0
+2014-19-03 18:18:02 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:18:02 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:18:03 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:18:03 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:18:03 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901og0qhsvmrd03|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901og0qhsvmrd03|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:18:05 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:18:05.0}]
+2014-19-03 18:18:05 [DEBUG]- SQLExecutoryDirective      - [{SYSDATE=2014-03-19 18:18:05.0}]
+2014-19-03 18:18:05 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 2014-03-19 18:18:05.0
+2014-19-03 18:18:05 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:18:05 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:18:05.0}]
+2014-19-03 18:18:05 [DEBUG]- SQLExecutoryDirective      - [{SYSDATE=2014-03-19 18:18:05.0}]
+2014-19-03 18:18:05 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 2014-03-19 18:18:05.0
+2014-19-03 18:19:08 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:19:08 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:19:09 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:19:09 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:19:09 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901og25fg1hifqqv|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901og25fg1hifqqv|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:19:12 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:19:12.0}]
+2014-19-03 18:19:12 [DEBUG]- SQLExecutoryDirective      - SQL执行结果:[{SYSDATE=2014-03-19 18:19:12.0}]
+2014-19-03 18:19:12 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:19:12.0
+2014-19-03 18:19:12 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 2014-03-19 18:19:12.0
+2014-19-03 18:19:12 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:19:12 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:19:12.0}]
+2014-19-03 18:19:12 [DEBUG]- SQLExecutoryDirective      - SQL执行结果:[{SYSDATE=2014-03-19 18:19:12.0}]
+2014-19-03 18:19:12 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:19:12.0
+2014-19-03 18:19:12 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 2014-03-19 18:19:12.0
+2014-19-03 18:20:31 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:20:31 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:20:32 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:20:32 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select SYSDATE FROM DUAL
+2014-19-03 18:20:32 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:20:32 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901og3x6w1ktu4ut|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901og3x6w1ktu4ut|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:20:34 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:20:34.0}]
+2014-19-03 18:20:34 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:20:34.0
+2014-19-03 18:20:34 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 2014-03-19 18:20:34.0
+2014-19-03 18:20:34 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select SYSDATE FROM DUAL
+2014-19-03 18:20:34 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:20:34 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:20:34.0}]
+2014-19-03 18:20:34 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:20:34.0
+2014-19-03 18:20:34 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 2014-03-19 18:20:34.0
+2014-19-03 18:26:43 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:26:44 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:26:45 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD $none to render this.
+2014-19-03 18:26:45 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select SYSDATE FROM DUAL
+2014-19-03 18:26:45 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:26:45 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901ogbwv4m2ikuo|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901ogbwv4m2ikuo|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:26:47 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:26:47.0}]
+2014-19-03 18:26:47 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:26:47.0
+2014-19-03 18:26:47 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: We are using test ADSD  to render this. 2014-03-19 18:26:47.0
+2014-19-03 18:26:47 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select SYSDATE FROM DUAL
+2014-19-03 18:26:47 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-19-03 18:26:47 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-19 18:26:47.0}]
+2014-19-03 18:26:47 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-19 18:26:47.0
+2014-19-03 18:26:47 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: 2014-03-19 18:26:47.0
+2014-19-03 18:30:14 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-19-03 18:30:15 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-19-03 18:30:15 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select c.COLUMN_NAME, c.DATA_TYPE||'('||c.DATA_LENGTH||') '|| c.NULLABLE DS, cc.COMMENTS from USER_TAB_COLUMNS c inner join user_col_comments cc on c.TABLE_NAME = cc.TABLE_NAME and c.COLUMN_NAME = cc.COLUMN_NAME where c.TABLE_NAME = 'CS_CP_INFO'
+2014-19-03 18:30:15 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcppw901oggfgx1v4hmat|53fcc0a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcppw901oggfgx1v4hmat|53fcc0a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-19-03 18:30:18 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{COLUMN_NAME=NEED_UPLOAD, COMMENTS=公开|是否需要用户上传凭证, DS=VARCHAR2(2) Y}, {COLUMN_NAME=URGENT_TYPE, COMMENTS=公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CLAIMER_EMAIL, COMMENTS=索赔人邮件地址, DS=VARCHAR2(100) Y}, {COLUMN_NAME=AUDIT_BATCH_NO, COMMENTS=机密|资金审批批次号, DS=VARCHAR2(30) Y}, {COLUMN_NAME=CATALOG_THREE, COMMENTS=机密|赔付单所属产品三级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_TWO, COMMENTS=机密|赔付单所属产品二级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_ONE, COMMENTS=机密|赔付单所属产品一级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=ID, COMMENTS=公开|补偿单据主键, DS=VARCHAR2(18) N}, {COLUMN_NAME=PROD_ID, COMMENTS=公开|补偿单据对应的产品ID, DS=VARCHAR2(18) N}, {COLUMN_NAME=TYPE, COMMENTS=公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型, DS=VARCHAR2(16) N}, {COLUMN_NAME=CAUSE1, COMMENTS=公开|补偿的一级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CAUSE2, COMMENTS=公开|补偿的二级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CLAIMER_CARDNO, COMMENTS=公开|索赔人的支付宝卡号, DS=VARCHAR2(20) N}, {COLUMN_NAME=CLAIMER_CERTID, COMMENTS=公开|索赔人的身份证号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CLAIMER_LOGINID, COMMENTS=索赔人的登陆号, DS=VARCHAR2(128) Y}, {COLUMN_NAME=CLAIMER_CELLPHONE, COMMENTS=索赔人的手机号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CONFIRM_OPERATOR_ID, COMMENTS=机密|确认此补偿单据的操作小二人员的id，此ID来自bumng, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CONFIRM_TIME, COMMENTS=公开|确认此补偿单据的确认时间, DS=TIMESTAMP(6)(11) Y}, {COLUMN_NAME=DESCRIPTION, COMMENTS=公开|补偿单据备注信息, DS=VARCHAR2(2000) Y}, {COLUMN_NAME=BIZ_STATUS, COMMENTS=公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成, DS=VARCHAR2(20) Y}, {COLUMN_NAME=AUDIT_ATTACHMENT_PATH, COMMENTS=高管批复的邮件路径, DS=VARCHAR2(100) Y}, {COLUMN_NAME=SOURCE, COMMENTS=公开|补偿单据的来源：CASE：案件平台, DS=VARCHAR2(10) N}, {COLUMN_NAME=SOURCE_BIZ_IDS, COMMENTS=单据来源的业务id集合：采用‘,’分割, DS=VARCHAR2(256) Y}, {COLUMN_NAME=GMT_CREATE, COMMENTS=创建时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=GMT_MODIFIED, COMMENTS=修改时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=TASK_ID, COMMENTS=公开|补偿单据对应的工单id, DS=VARCHAR2(24) Y}, {COLUMN_NAME=CP_MODE, COMMENTS=公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡), DS=VARCHAR2(16) Y}]
+2014-19-03 18:30:18 [INFO ]- InitData                   - {
+    "CS_CP_INFO" : [{
+        "NEED_UPLOAD" : null,                               /*VARCHAR2(2) Y 公开|是否需要用户上传凭证*/
+        "URGENT_TYPE" : null,                               /*VARCHAR2(16) Y 公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速*/
+        "CLAIMER_EMAIL" : null,                             /*VARCHAR2(100) Y 索赔人邮件地址*/
+        "AUDIT_BATCH_NO" : null,                            /*VARCHAR2(30) Y 机密|资金审批批次号*/
+        "CATALOG_THREE" : null,                             /*VARCHAR2(50) Y 机密|赔付单所属产品三级类目*/
+        "CATALOG_TWO" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品二级类目*/
+        "CATALOG_ONE" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品一级类目*/
+        "ID" : null,                                        /*VARCHAR2(18) N 公开|补偿单据主键*/
+        "PROD_ID" : null,                                   /*VARCHAR2(18) N 公开|补偿单据对应的产品ID*/
+        "TYPE" : null,                                      /*VARCHAR2(16) N 公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型*/
+        "CAUSE1" : null,                                    /*VARCHAR2(256) Y 公开|补偿的一级原因*/
+        "CAUSE2" : null,                                    /*VARCHAR2(256) Y 公开|补偿的二级原因*/
+        "CLAIMER_CARDNO" : null,                            /*VARCHAR2(20) N 公开|索赔人的支付宝卡号*/
+        "CLAIMER_CERTID" : null,                            /*VARCHAR2(20) Y 公开|索赔人的身份证号*/
+        "CLAIMER_LOGINID" : null,                           /*VARCHAR2(128) Y 索赔人的登陆号*/
+        "CLAIMER_CELLPHONE" : null,                         /*VARCHAR2(20) Y 索赔人的手机号*/
+        "CONFIRM_OPERATOR_ID" : null,                       /*VARCHAR2(16) Y 机密|确认此补偿单据的操作小二人员的id，此ID来自bumng*/
+        "CONFIRM_TIME" : null,                              /*TIMESTAMP(6)(11) Y 公开|确认此补偿单据的确认时间*/
+        "DESCRIPTION" : null,                               /*VARCHAR2(2000) Y 公开|补偿单据备注信息*/
+        "BIZ_STATUS" : null,                                /*VARCHAR2(20) Y 公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成*/
+        "AUDIT_ATTACHMENT_PATH" : null,                     /*VARCHAR2(100) Y 高管批复的邮件路径*/
+        "SOURCE" : null,                                    /*VARCHAR2(10) N 公开|补偿单据的来源：CASE：案件平台*/
+        "SOURCE_BIZ_IDS" : null,                            /*VARCHAR2(256) Y 单据来源的业务id集合：采用‘,’分割*/
+        "GMT_CREATE" : null,                                /*TIMESTAMP(6)(11) N 创建时间*/
+        "GMT_MODIFIED" : null,                              /*TIMESTAMP(6)(11) N 修改时间*/
+        "TASK_ID" : null,                                   /*VARCHAR2(24) Y 公开|补偿单据对应的工单id*/
+        "CP_MODE" : null                                    /*VARCHAR2(16) Y 公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡)*/
+    }]
+}
