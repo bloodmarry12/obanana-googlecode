@@ -1,0 +1,31 @@
+{
+    "CS_CP_INFO" : [{
+        "ID" : null,                                        /*VARCHAR2(18) N 公开|补偿单据主键*/
+        "NEED_UPLOAD" : null,                               /*VARCHAR2(2) Y 公开|是否需要用户上传凭证*/
+        "URGENT_TYPE" : null,                               /*VARCHAR2(16) Y 公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速*/
+        "CLAIMER_EMAIL" : null,                             /*VARCHAR2(100) Y 索赔人邮件地址*/
+        "AUDIT_BATCH_NO" : null,                            /*VARCHAR2(30) Y 机密|资金审批批次号*/
+        "CATALOG_THREE" : null,                             /*VARCHAR2(50) Y 机密|赔付单所属产品三级类目*/
+        "CATALOG_TWO" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品二级类目*/
+        "CATALOG_ONE" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品一级类目*/
+        "PROD_ID" : null,                                   /*VARCHAR2(18) N 公开|补偿单据对应的产品ID*/
+        "TYPE" : null,                                      /*VARCHAR2(16) N 公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型*/
+        "CAUSE1" : null,                                    /*VARCHAR2(256) Y 公开|补偿的一级原因*/
+        "CAUSE2" : null,                                    /*VARCHAR2(256) Y 公开|补偿的二级原因*/
+        "CLAIMER_CARDNO" : null,                            /*VARCHAR2(20) N 公开|索赔人的支付宝卡号*/
+        "CLAIMER_CERTID" : null,                            /*VARCHAR2(20) Y 公开|索赔人的身份证号*/
+        "CLAIMER_LOGINID" : null,                           /*VARCHAR2(128) Y 索赔人的登陆号*/
+        "CLAIMER_CELLPHONE" : null,                         /*VARCHAR2(20) Y 索赔人的手机号*/
+        "CONFIRM_OPERATOR_ID" : null,                       /*VARCHAR2(16) Y 机密|确认此补偿单据的操作小二人员的id，此ID来自bumng*/
+        "CONFIRM_TIME" : null,                              /*TIMESTAMP(6)(11) Y 公开|确认此补偿单据的确认时间*/
+        "DESCRIPTION" : null,                               /*VARCHAR2(2000) Y 公开|补偿单据备注信息*/
+        "BIZ_STATUS" : null,                                /*VARCHAR2(20) Y 公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成*/
+        "AUDIT_ATTACHMENT_PATH" : null,                     /*VARCHAR2(100) Y 高管批复的邮件路径*/
+        "SOURCE" : null,                                    /*VARCHAR2(10) N 公开|补偿单据的来源：CASE：案件平台*/
+        "SOURCE_BIZ_IDS" : null,                            /*VARCHAR2(256) Y 单据来源的业务id集合：采用‘,’分割*/
+        "GMT_CREATE" : null,                                /*TIMESTAMP(6)(11) N 创建时间*/
+        "GMT_MODIFIED" : null,                              /*TIMESTAMP(6)(11) N 修改时间*/
+        "TASK_ID" : null,                                   /*VARCHAR2(24) Y 公开|补偿单据对应的工单id*/
+        "CP_MODE" : null                                    /*VARCHAR2(16) Y 公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡)*/
+    }]
+}

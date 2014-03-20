@@ -1,0 +1,938 @@
+2014-20-03 10:27:48 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:27:49 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:28:25 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:28:26 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:33:47 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:33:47 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:36:08 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:36:09 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:36:09 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+    "TEST" : [{
+        "COL_1" : "VALUE_1",                                     /*"" COMMENTS_1*/
+        "COL_2" : "VALUE_2",                                     /*"" COMMENTS_2*/
+        "COL_3" : "VALUE_3",                                     /*"" COMMENTS_3*/
+        "COL_4" : "VALUE_4"                                      /*"" COMMENTS_4*/
+    },{
+        "COL_1" : "VALUE_1",                                     /*"" COMMENTS_1*/
+        "COL_2" : "VALUE_2",                                     /*"" COMMENTS_2*/
+        "COL_3" : "VALUE_3",                                     /*"" COMMENTS_3*/
+        "COL_4" : "VALUE_4"                                      /*"" COMMENTS_4*/
+    }], 
+    "USER" : [{
+        "ID" : "123",                                        
+        "NAME" : 456,                                      /*"" COMMENTS_2*/
+        "TYPE" : "FUNC(789)",                                      /*"" COMMENTS_3*/
+        "GMT_CREATE" : "123"                                 /*"" COMMENTS_4*/
+    }]
+}
+
+2014-20-03 10:36:10 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into TEST (COL_1, COL_2, COL_3, COL_4) values ('VALUE_1', 'VALUE_2', 'VALUE_3', 'VALUE_4')
+2014-20-03 10:36:10 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into TEST (COL_1, COL_2, COL_3, COL_4) values ('VALUE_1', 'VALUE_2', 'VALUE_3', 'VALUE_4')
+2014-20-03 10:36:10 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into USER (ID, NAME, TYPE, GMT_CREATE) values ('123', 456, 789, '123')
+2014-20-03 10:39:18 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:39:18 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:39:19 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2088000000000000001",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "{SYSDATE}",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:39:19 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2088000000000000001', 200, 100, 100, '{SYSDATE}', '{SYSDATE}', 'ALIPAY')
+2014-20-03 10:39:19 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', '{SYSDATE}', '{SYSDATE}')
+2014-20-03 10:39:19 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pf2n4cfzw2m0|5c07f4ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pf2n4cfzw2m0|5c07f4ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:40:30 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:40:31 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:40:48 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2088000000000000001",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "{SYSDATE}",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:41:00 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2088000000000000001', 200, 100, 100, '{SYSDATE}', '{SYSDATE}', 'ALIPAY')
+2014-20-03 10:41:00 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', '{SYSDATE}', '{SYSDATE}')
+2014-20-03 10:41:52 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pf47es1jrpf4j|75843a75, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pf47es1jrpf4j|75843a75, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:42:41 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:42:42 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:42:42 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2088000000000000001",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "{SYSDATE}",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "{SYSDATE}"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:42:42 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2088000000000000001', 200, 100, 100, '{SYSDATE}', '{SYSDATE}', 'ALIPAY')
+2014-20-03 10:42:42 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', '{SYSDATE}', '{SYSDATE}')
+2014-20-03 10:42:43 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pf70a31juyl7f|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pf70a31juyl7f|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:44:03 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:44:04 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:44:04 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2088000000000000001",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:44:05 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2088000000000000001', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 10:44:05 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 10:44:05 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pf8rm81j8cq0o|e60e128, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pf8rm81j8cq0o|e60e128, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:48:19 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:48:19 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:48:20 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2088000000000000001",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:48:20 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2088000000000000001', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 10:48:20 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 10:48:20 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pfe8v012i9z97|5c07f4ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pfe8v012i9z97|5c07f4ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:55:40 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:55:40 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:56:30 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:56:31 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 10:56:31 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select SYSDATE FROM DUAL
+2014-20-03 10:56:31 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select SYSDATE FROM DUAL
+2014-20-03 10:56:31 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pforwzo1ojx4|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pforwzo1ojx4|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 10:56:34 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{SYSDATE=2014-03-20 10:56:33.0}]
+2014-20-03 10:56:34 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:2014-03-20 10:56:33.0
+2014-20-03 10:56:34 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "2014-03-20 10:56:33.0",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 10:56:34 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', '2014-03-20 10:56:33.0', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 10:56:34 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 10:58:47 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 10:58:48 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:00:17 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:00:17 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:00:18 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:00:18 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:00:18 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pftms51cdkqyt|5c07f4ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pftms51cdkqyt|5c07f4ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:00:20 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:00:20 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:00:20 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 11:00:20 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 11:00:20 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 11:06:47 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:06:47 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:06:48 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select c.COLUMN_NAME, c.DATA_TYPE||'('||c.DATA_LENGTH||') '|| c.NULLABLE DS, cc.COMMENTS from USER_TAB_COLUMNS c inner join user_col_comments cc on c.TABLE_NAME = cc.TABLE_NAME and c.COLUMN_NAME = cc.COLUMN_NAME where c.TABLE_NAME = 'CS_CP_INFO'
+2014-20-03 11:06:48 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pg1zxk18pix55|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pg1zxk18pix55|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:06:50 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{COLUMN_NAME=NEED_UPLOAD, COMMENTS=公开|是否需要用户上传凭证, DS=VARCHAR2(2) Y}, {COLUMN_NAME=URGENT_TYPE, COMMENTS=公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CLAIMER_EMAIL, COMMENTS=索赔人邮件地址, DS=VARCHAR2(100) Y}, {COLUMN_NAME=AUDIT_BATCH_NO, COMMENTS=机密|资金审批批次号, DS=VARCHAR2(30) Y}, {COLUMN_NAME=CATALOG_THREE, COMMENTS=机密|赔付单所属产品三级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_TWO, COMMENTS=机密|赔付单所属产品二级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_ONE, COMMENTS=机密|赔付单所属产品一级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=ID, COMMENTS=公开|补偿单据主键, DS=VARCHAR2(18) N}, {COLUMN_NAME=PROD_ID, COMMENTS=公开|补偿单据对应的产品ID, DS=VARCHAR2(18) N}, {COLUMN_NAME=TYPE, COMMENTS=公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型, DS=VARCHAR2(16) N}, {COLUMN_NAME=CAUSE1, COMMENTS=公开|补偿的一级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CAUSE2, COMMENTS=公开|补偿的二级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CLAIMER_CARDNO, COMMENTS=公开|索赔人的支付宝卡号, DS=VARCHAR2(20) N}, {COLUMN_NAME=CLAIMER_CERTID, COMMENTS=公开|索赔人的身份证号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CLAIMER_LOGINID, COMMENTS=索赔人的登陆号, DS=VARCHAR2(128) Y}, {COLUMN_NAME=CLAIMER_CELLPHONE, COMMENTS=索赔人的手机号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CONFIRM_OPERATOR_ID, COMMENTS=机密|确认此补偿单据的操作小二人员的id，此ID来自bumng, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CONFIRM_TIME, COMMENTS=公开|确认此补偿单据的确认时间, DS=TIMESTAMP(6)(11) Y}, {COLUMN_NAME=DESCRIPTION, COMMENTS=公开|补偿单据备注信息, DS=VARCHAR2(2000) Y}, {COLUMN_NAME=BIZ_STATUS, COMMENTS=公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成, DS=VARCHAR2(20) Y}, {COLUMN_NAME=AUDIT_ATTACHMENT_PATH, COMMENTS=高管批复的邮件路径, DS=VARCHAR2(100) Y}, {COLUMN_NAME=SOURCE, COMMENTS=公开|补偿单据的来源：CASE：案件平台, DS=VARCHAR2(10) N}, {COLUMN_NAME=SOURCE_BIZ_IDS, COMMENTS=单据来源的业务id集合：采用‘,’分割, DS=VARCHAR2(256) Y}, {COLUMN_NAME=GMT_CREATE, COMMENTS=创建时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=GMT_MODIFIED, COMMENTS=修改时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=TASK_ID, COMMENTS=公开|补偿单据对应的工单id, DS=VARCHAR2(24) Y}, {COLUMN_NAME=CP_MODE, COMMENTS=公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡), DS=VARCHAR2(16) Y}]
+2014-20-03 11:06:50 [INFO ]- InitDataDefCommand         - {
+    "CS_CP_INFO" : [{
+        "NEED_UPLOAD" : null,                               /*VARCHAR2(2) Y 公开|是否需要用户上传凭证*/
+        "URGENT_TYPE" : null,                               /*VARCHAR2(16) Y 公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速*/
+        "CLAIMER_EMAIL" : null,                             /*VARCHAR2(100) Y 索赔人邮件地址*/
+        "AUDIT_BATCH_NO" : null,                            /*VARCHAR2(30) Y 机密|资金审批批次号*/
+        "CATALOG_THREE" : null,                             /*VARCHAR2(50) Y 机密|赔付单所属产品三级类目*/
+        "CATALOG_TWO" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品二级类目*/
+        "CATALOG_ONE" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品一级类目*/
+        "ID" : null,                                        /*VARCHAR2(18) N 公开|补偿单据主键*/
+        "PROD_ID" : null,                                   /*VARCHAR2(18) N 公开|补偿单据对应的产品ID*/
+        "TYPE" : null,                                      /*VARCHAR2(16) N 公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型*/
+        "CAUSE1" : null,                                    /*VARCHAR2(256) Y 公开|补偿的一级原因*/
+        "CAUSE2" : null,                                    /*VARCHAR2(256) Y 公开|补偿的二级原因*/
+        "CLAIMER_CARDNO" : null,                            /*VARCHAR2(20) N 公开|索赔人的支付宝卡号*/
+        "CLAIMER_CERTID" : null,                            /*VARCHAR2(20) Y 公开|索赔人的身份证号*/
+        "CLAIMER_LOGINID" : null,                           /*VARCHAR2(128) Y 索赔人的登陆号*/
+        "CLAIMER_CELLPHONE" : null,                         /*VARCHAR2(20) Y 索赔人的手机号*/
+        "CONFIRM_OPERATOR_ID" : null,                       /*VARCHAR2(16) Y 机密|确认此补偿单据的操作小二人员的id，此ID来自bumng*/
+        "CONFIRM_TIME" : null,                              /*TIMESTAMP(6)(11) Y 公开|确认此补偿单据的确认时间*/
+        "DESCRIPTION" : null,                               /*VARCHAR2(2000) Y 公开|补偿单据备注信息*/
+        "BIZ_STATUS" : null,                                /*VARCHAR2(20) Y 公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成*/
+        "AUDIT_ATTACHMENT_PATH" : null,                     /*VARCHAR2(100) Y 高管批复的邮件路径*/
+        "SOURCE" : null,                                    /*VARCHAR2(10) N 公开|补偿单据的来源：CASE：案件平台*/
+        "SOURCE_BIZ_IDS" : null,                            /*VARCHAR2(256) Y 单据来源的业务id集合：采用‘,’分割*/
+        "GMT_CREATE" : null,                                /*TIMESTAMP(6)(11) N 创建时间*/
+        "GMT_MODIFIED" : null,                              /*TIMESTAMP(6)(11) N 修改时间*/
+        "TASK_ID" : null,                                   /*VARCHAR2(24) Y 公开|补偿单据对应的工单id*/
+        "CP_MODE" : null                                    /*VARCHAR2(16) Y 公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡)*/
+    }]
+}
+2014-20-03 11:16:32 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:16:32 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:16:33 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:16:33 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:16:33 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pgejaw1rgfkd3|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pgejaw1rgfkd3|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:16:35 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:16:35 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:16:35 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 11:16:36 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:16:36 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE 
+2014-20-03 11:16:36 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:16:36 [DEBUG]- DefaultSqlExecutor         - 返回结果:[]
+2014-20-03 11:16:44 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:16:45 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:16:45 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select c.COLUMN_NAME, c.DATA_TYPE||'('||c.DATA_LENGTH||') '|| c.NULLABLE DS, cc.COMMENTS from USER_TAB_COLUMNS c inner join user_col_comments cc on c.TABLE_NAME = cc.TABLE_NAME and c.COLUMN_NAME = cc.COLUMN_NAME where c.TABLE_NAME = 'CS_CP_INFO'
+2014-20-03 11:16:45 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pgeslo1d1jurp|5c07f4ec, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pgeslo1d1jurp|5c07f4ec, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:16:47 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{COLUMN_NAME=NEED_UPLOAD, COMMENTS=公开|是否需要用户上传凭证, DS=VARCHAR2(2) Y}, {COLUMN_NAME=URGENT_TYPE, COMMENTS=公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CLAIMER_EMAIL, COMMENTS=索赔人邮件地址, DS=VARCHAR2(100) Y}, {COLUMN_NAME=AUDIT_BATCH_NO, COMMENTS=机密|资金审批批次号, DS=VARCHAR2(30) Y}, {COLUMN_NAME=CATALOG_THREE, COMMENTS=机密|赔付单所属产品三级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_TWO, COMMENTS=机密|赔付单所属产品二级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=CATALOG_ONE, COMMENTS=机密|赔付单所属产品一级类目, DS=VARCHAR2(50) Y}, {COLUMN_NAME=ID, COMMENTS=公开|补偿单据主键, DS=VARCHAR2(18) N}, {COLUMN_NAME=PROD_ID, COMMENTS=公开|补偿单据对应的产品ID, DS=VARCHAR2(18) N}, {COLUMN_NAME=TYPE, COMMENTS=公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型, DS=VARCHAR2(16) N}, {COLUMN_NAME=CAUSE1, COMMENTS=公开|补偿的一级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CAUSE2, COMMENTS=公开|补偿的二级原因, DS=VARCHAR2(256) Y}, {COLUMN_NAME=CLAIMER_CARDNO, COMMENTS=公开|索赔人的支付宝卡号, DS=VARCHAR2(20) N}, {COLUMN_NAME=CLAIMER_CERTID, COMMENTS=公开|索赔人的身份证号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CLAIMER_LOGINID, COMMENTS=索赔人的登陆号, DS=VARCHAR2(128) Y}, {COLUMN_NAME=CLAIMER_CELLPHONE, COMMENTS=索赔人的手机号, DS=VARCHAR2(20) Y}, {COLUMN_NAME=CONFIRM_OPERATOR_ID, COMMENTS=机密|确认此补偿单据的操作小二人员的id，此ID来自bumng, DS=VARCHAR2(16) Y}, {COLUMN_NAME=CONFIRM_TIME, COMMENTS=公开|确认此补偿单据的确认时间, DS=TIMESTAMP(6)(11) Y}, {COLUMN_NAME=DESCRIPTION, COMMENTS=公开|补偿单据备注信息, DS=VARCHAR2(2000) Y}, {COLUMN_NAME=BIZ_STATUS, COMMENTS=公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成, DS=VARCHAR2(20) Y}, {COLUMN_NAME=AUDIT_ATTACHMENT_PATH, COMMENTS=高管批复的邮件路径, DS=VARCHAR2(100) Y}, {COLUMN_NAME=SOURCE, COMMENTS=公开|补偿单据的来源：CASE：案件平台, DS=VARCHAR2(10) N}, {COLUMN_NAME=SOURCE_BIZ_IDS, COMMENTS=单据来源的业务id集合：采用‘,’分割, DS=VARCHAR2(256) Y}, {COLUMN_NAME=GMT_CREATE, COMMENTS=创建时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=GMT_MODIFIED, COMMENTS=修改时间, DS=TIMESTAMP(6)(11) N}, {COLUMN_NAME=TASK_ID, COMMENTS=公开|补偿单据对应的工单id, DS=VARCHAR2(24) Y}, {COLUMN_NAME=CP_MODE, COMMENTS=公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡), DS=VARCHAR2(16) Y}]
+2014-20-03 11:16:47 [INFO ]- InitDataDefCommand         - {
+    "CS_CP_INFO" : [{
+        "NEED_UPLOAD" : null,                               /*VARCHAR2(2) Y 公开|是否需要用户上传凭证*/
+        "URGENT_TYPE" : null,                               /*VARCHAR2(16) Y 公开|赔付单据加急类型，NORMAIL：普通类型，S_URGENT：极速*/
+        "CLAIMER_EMAIL" : null,                             /*VARCHAR2(100) Y 索赔人邮件地址*/
+        "AUDIT_BATCH_NO" : null,                            /*VARCHAR2(30) Y 机密|资金审批批次号*/
+        "CATALOG_THREE" : null,                             /*VARCHAR2(50) Y 机密|赔付单所属产品三级类目*/
+        "CATALOG_TWO" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品二级类目*/
+        "CATALOG_ONE" : null,                               /*VARCHAR2(50) Y 机密|赔付单所属产品一级类目*/
+        "ID" : null,                                        /*VARCHAR2(18) N 公开|补偿单据主键*/
+        "PROD_ID" : null,                                   /*VARCHAR2(18) N 公开|补偿单据对应的产品ID*/
+        "TYPE" : null,                                      /*VARCHAR2(16) N 公开|补偿单据的类型，EVENT:事件类型，  EXPRESS_BALANCE:快捷/余额类型*/
+        "CAUSE1" : null,                                    /*VARCHAR2(256) Y 公开|补偿的一级原因*/
+        "CAUSE2" : null,                                    /*VARCHAR2(256) Y 公开|补偿的二级原因*/
+        "CLAIMER_CARDNO" : null,                            /*VARCHAR2(20) N 公开|索赔人的支付宝卡号*/
+        "CLAIMER_CERTID" : null,                            /*VARCHAR2(20) Y 公开|索赔人的身份证号*/
+        "CLAIMER_LOGINID" : null,                           /*VARCHAR2(128) Y 索赔人的登陆号*/
+        "CLAIMER_CELLPHONE" : null,                         /*VARCHAR2(20) Y 索赔人的手机号*/
+        "CONFIRM_OPERATOR_ID" : null,                       /*VARCHAR2(16) Y 机密|确认此补偿单据的操作小二人员的id，此ID来自bumng*/
+        "CONFIRM_TIME" : null,                              /*TIMESTAMP(6)(11) Y 公开|确认此补偿单据的确认时间*/
+        "DESCRIPTION" : null,                               /*VARCHAR2(2000) Y 公开|补偿单据备注信息*/
+        "BIZ_STATUS" : null,                                /*VARCHAR2(20) Y 公开|补偿单据的业务状态：executiveapprove：已确认,待高管审批，finish：补偿处理完成*/
+        "AUDIT_ATTACHMENT_PATH" : null,                     /*VARCHAR2(100) Y 高管批复的邮件路径*/
+        "SOURCE" : null,                                    /*VARCHAR2(10) N 公开|补偿单据的来源：CASE：案件平台*/
+        "SOURCE_BIZ_IDS" : null,                            /*VARCHAR2(256) Y 单据来源的业务id集合：采用‘,’分割*/
+        "GMT_CREATE" : null,                                /*TIMESTAMP(6)(11) N 创建时间*/
+        "GMT_MODIFIED" : null,                              /*TIMESTAMP(6)(11) N 修改时间*/
+        "TASK_ID" : null,                                   /*VARCHAR2(24) Y 公开|补偿单据对应的工单id*/
+        "CP_MODE" : null                                    /*VARCHAR2(16) Y 公开|补偿单据的模式，A：支付宝现金，B：银行卡现金，AB：混合(支付宝和银行卡)*/
+    }]
+}
+2014-20-03 11:17:02 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:17:03 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:17:04 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:17:04 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:17:04 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pgf6re1oibup5|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pgf6re1oibup5|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:17:05 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:17:05 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:17:05 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 11:17:05 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:17:05 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE 
+2014-20-03 11:17:05 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:17:05 [DEBUG]- DefaultSqlExecutor         - 返回结果:[]
+2014-20-03 11:20:55 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:20:55 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:20:56 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:20:56 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:20:56 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pgk5u719c37tn|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pgk5u719c37tn|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:20:58 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:20:58 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:20:58 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 11:20:58 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:20:58 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE 
+2014-20-03 11:20:58 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and GMT_CREATE = SYSDATE and GMT_MODIFIED = SYSDATE and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:20:58 [DEBUG]- DefaultSqlExecutor         - 返回结果:[]
+2014-20-03 11:21:50 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:21:50 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:21:51 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:21:51 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:21:51 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pglc9l1ny5a97|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pglc9l1ny5a97|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:21:53 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:21:53 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:21:53 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 11:22:05 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 11:22:06 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 11:22:06 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 11:22:06 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 11:22:06 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pgloc61bsx270|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pgloc61bsx270|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 11:22:09 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 11:22:09 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 11:22:09 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 11:22:09 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:22:09 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 11:22:09 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 11:22:09 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{PRECOMP_AMOUNT=100, SPEND_AMOUNT=100, COMP_ACCOUNT=SYSDATE, TRANSFER_AMOUNT=200, GMT_MODIFIED=2014-03-20 11:00:20.0, ID=fund_id00000000001, PAYER=ALIPAY, FUND_TYPE=ALIPAY, COMPENSATION_ID=cp_id0000000000001, STATUS=FAIL, GMT_CREATE=2014-03-20 11:00:20.0}]
+2014-20-03 11:22:09 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 11:22:09 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{ACCEPTOR_CERTID=632822197309081455, GMT_MODIFIED=2014-03-20 11:00:20.0, ACCEPTOR_NAME=一风, FUND_ID=fund_id00000000001, GMT_CREATE=2014-03-20 11:00:20.0, ACCEPTOR_LOGINID=aohai.li@gmail.com, ACCEPTOR_CARDNO=2088102131952936}]
+2014-20-03 12:49:04 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 12:49:05 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 12:49:07 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 12:49:07 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 12:49:07 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pjpjmm1gmlie5|53fcc0a2, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pjpjmm1gmlie5|53fcc0a2, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 12:49:10 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 12:49:10 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 12:49:10 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 12:49:10 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 12:49:10 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 12:52:25 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 12:52:26 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 12:52:27 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 12:52:27 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 12:52:27 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pjtuiadpmbpr|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pjtuiadpmbpr|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 12:52:29 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 12:52:29 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 12:52:29 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 12:52:29 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 12:52:29 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 12:52:29 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 12:52:29 [DEBUG]- DefaultSqlExecutor         - 返回结果:0
+2014-20-03 12:52:29 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 12:52:30 [DEBUG]- DefaultSqlExecutor         - 返回结果:0
+2014-20-03 13:13:36 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:13:37 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:13:37 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:13:37 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:13:37 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pkl35x5sxl3|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pkl35x5sxl3|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:13:41 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:13:41 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:13:41 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 13:13:41 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:13:41 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:13:41 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:13:41 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:13:41 [DEBUG]- InitDataCommand            - 插入[1]insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:13:41 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:13:41 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:13:41 [DEBUG]- InitDataCommand            - 插入[1]insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:14:03 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:14:04 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:14:04 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:14:04 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:14:05 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pklo4zk89y5w|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pklo4zk89y5w|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:14:07 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:14:07 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:14:07 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 13:14:07 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:14:07 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:14:07 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:36:51 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:36:51 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:36:52 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:52 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:52 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plez7i16gtkga|76caf6c1, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plez7i16gtkga|76caf6c1, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:36:55 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:36:55 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 13:36:55 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:36:55 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:36:55 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:36:55 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:36:55 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 13:36:55 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:36:55 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:36:55 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:36:55 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:36:55 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:36:55 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:36:55 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 13:36:55 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:36:55 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:36:55 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:36:56 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{PRECOMP_AMOUNT=100, SPEND_AMOUNT=100, COMP_ACCOUNT=SYSDATE, TRANSFER_AMOUNT=200, GMT_MODIFIED=2014-03-20 13:36:55.0, ID=fund_id00000000001, PAYER=ALIPAY, FUND_TYPE=ALIPAY, COMPENSATION_ID=cp_id0000000000001, STATUS=FAIL, GMT_CREATE=2014-03-20 13:36:55.0}]
+2014-20-03 13:36:56 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:36:56 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{ACCEPTOR_CERTID=632822197309081455, GMT_MODIFIED=2014-03-20 13:36:55.0, ACCEPTOR_NAME=一风, FUND_ID=fund_id00000000001, GMT_CREATE=2014-03-20 13:36:55.0, ACCEPTOR_LOGINID=aohai.li@gmail.com, ACCEPTOR_CARDNO=2088102131952936}]
+2014-20-03 13:39:55 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:39:56 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:39:56 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:39:56 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:39:56 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plixjw1hoboxl|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plixjw1hoboxl|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:39:59 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:39:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 13:39:59 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:39:59 [DEBUG]- ataEntry2DeleteSQLFormator - 构建delStatement: delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:39:59 [DEBUG]- SQLExecutoryDirective      - SQL宏参数:select 'SYSDATE' FROM DUAL
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select 'SYSDATE' FROM DUAL
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:[{'SYSDATE'=SYSDATE}]
+2014-20-03 13:39:59 [DEBUG]- SQLExecutoryDirective      - 渲染字符串:SYSDATE
+2014-20-03 13:39:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "SYSDATE",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)",      /*TIMESTAMP(6)(11) N修改时间*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+    "GMT_CREATE" : "FUNC(SYSDATE)",     /*TIMESTAMP(6)(11) N创建时间*/
+    "GMT_MODIFIED" : "FUNC(SYSDATE)"     /*TIMESTAMP(6)(11) N修改时间*/
+  }]
+}
+
+2014-20-03 13:39:59 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:39:59 [DEBUG]- ataEntry2InsertSQLFormator - 构建insertStatement: insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:39:59 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:1
+2014-20-03 13:39:59 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:39:59 [DEBUG]- ParserAfterVelocityMerge   - Velocity渲染后完成: {
+  "CS_CP_FUND" : [{
+    "ID" : "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿资金明细Id*/
+    "STATUS" : "FAIL",      /*VARCHAR2(64) Y公开|付款明细状态*/
+    "PAYER" : "ALIPAY",      /*VARCHAR2(20) Y理赔方。目前支持：ALIPAY和PINGAN*/
+    "COMPENSATION_ID" : "cp_id0000000000001",      /*VARCHAR2(18) N公开|补偿单据id*/
+    "COMP_ACCOUNT" : "1",      /*VARCHAR2(30) Y公开|补偿方2088账号*/
+    "TRANSFER_AMOUNT" : 200,      /*NUMBER(22) Y公开|补偿的总金额*/
+    "SPEND_AMOUNT" : 100,      /*NUMBER(22) Y公开|赔偿金额（=补偿金额-垫付金额）*/
+    "PRECOMP_AMOUNT" : 100,      /*NUMBER(22) Y公开|垫付金额*/
+    "FUND_TYPE" : "ALIPAY"      /*VARCHAR2(16) N公开|打款明细类型：ALIPAY:支付宝余额，BANK:银行*/
+  }], 
+  "CS_CP_ALIPAY_FUND" : [{
+    "FUND_ID" :  "fund_id00000000001",      /*VARCHAR2(18) N公开|补偿到支付宝的资金明细ID*/
+    "ACCEPTOR_CERTID" : "632822197309081455",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝账户身份证ID*/
+    "ACCEPTOR_CARDNO" : "2088102131952936",      /*VARCHAR2(20) Y公开|接受补偿资金的支付宝卡号*/
+    "ACCEPTOR_LOGINID" : "aohai.li@gmail.com",      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝登陆号*/
+    "ACCEPTOR_NAME" : "一风"      /*VARCHAR2(128) Y公开|接受补偿资金的支付宝名字*/
+  }]
+}
+
+2014-20-03 13:39:59 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:39:59 [DEBUG]- ataEntry2SelectSQLFormator - 构建delStatement: select * from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 执行SQL:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:39:59 [DEBUG]- DefaultSqlExecutor         - 返回结果:[]
+2014-20-03 13:41:35 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:41:36 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:42:17 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:42:17 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:43:07 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:43:08 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:44:04 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:44:05 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:44:05 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plo9kn1maz8gu|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plo9kn1maz8gu|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:44:08 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:44:08 [DEBUG]- InitDataCommand            - 插入[1]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:46:49 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:46:50 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:46:50 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plrt36wur41m|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plrt36wur41m|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:46:53 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:46:53 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:47:50 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:47:51 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:47:52 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plt4731phi7pn|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plt4731phi7pn|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:47:54 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:47:54 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:47:55 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:47:55 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:49:04 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:49:05 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:49:05 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plup59b02sy3|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plup59b02sy3|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:49:08 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:49:08 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:49:08 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:49:08 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:49:08 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:49:50 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:49:50 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:49:51 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901plvohtcrymn1|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901plvohtcrymn1|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:49:54 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:49:54 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:49:54 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:49:54 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:49:54 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:49:54 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:09 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:57:10 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:57:10 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pm53g114wpj5k|2e958bb8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pm53g114wpj5k|2e958bb8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:57:13 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:13 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:57:13 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:57:13 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:57:13 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:13 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:39 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:57:40 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:57:40 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pm5qi41ebmgq|bd86fd3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pm5qi41ebmgq|bd86fd3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:57:43 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:43 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:57:43 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:57:43 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:57:43 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:57:43 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:58:18 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 13:58:19 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 13:58:19 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pm6kj6u4tnb6|bd86fd3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pm6kj6u4tnb6|bd86fd3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 13:58:22 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:58:22 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 13:58:22 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 13:58:22 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 13:58:22 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 13:58:22 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:02:11 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 15:02:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 15:02:12 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901pogpyzjbt4c2|bd86fd3, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901pogpyzjbt4c2|bd86fd3, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 15:02:15 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:02:15 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 15:02:15 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 15:02:15 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 15:02:17 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:02:17 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:05:47 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 15:05:47 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 15:05:48 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcu39901polci61y49y9r|ed42d08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcu39901polci61y49y9r|ed42d08, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 15:05:51 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:05:51 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 15:05:51 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 15:05:51 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 15:05:52 [INFO ]- InvokeCommand              - hello world
+2014-20-03 15:05:52 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:05:52 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:14:41 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 15:14:41 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 15:14:42 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901powssa6wenq1|2353f67e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901powssa6wenq1|2353f67e, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 15:14:45 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:14:45 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 15:14:45 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 15:14:45 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 15:14:47 [INFO ]- InvokeCommand              - hello world:null
+2014-20-03 15:14:47 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:14:47 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:15:11 [INFO ]- MLog                       - MLog clients using log4j logging.
+2014-20-03 15:15:11 [INFO ]- C3P0Registry               - Initializing c3p0-0.9.5-pre6 [built 07-December-2013 02:33:38 +0000; debug? true; trace: 10]
+2014-20-03 15:15:12 [INFO ]- stractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901poxfvy4gtc81|5d5bdc50, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901poxfvy4gtc81|5d5bdc50, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2014-20-03 15:15:15 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = 'SYSDATE' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:15:15 [DEBUG]- CleanDataCommand           - 删除[成功]:delete from CS_CP_ALIPAY_FUND where FUND_ID = 'fund_id00000000001' and ACCEPTOR_CERTID = '632822197309081455' and ACCEPTOR_CARDNO = '2088102131952936' and ACCEPTOR_LOGINID = 'aohai.li@gmail.com' and ACCEPTOR_NAME = '一风' 
+2014-20-03 15:15:15 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_FUND (ID, STATUS, PAYER, COMPENSATION_ID, COMP_ACCOUNT, TRANSFER_AMOUNT, SPEND_AMOUNT, PRECOMP_AMOUNT, GMT_CREATE, GMT_MODIFIED, FUND_TYPE) values ('fund_id00000000001', 'FAIL', 'ALIPAY', 'cp_id0000000000001', 'SYSDATE', 200, 100, 100, SYSDATE, SYSDATE, 'ALIPAY')
+2014-20-03 15:15:15 [DEBUG]- InitDataCommand            - 插入[成功]:insert into CS_CP_ALIPAY_FUND (FUND_ID, ACCEPTOR_CERTID, ACCEPTOR_CARDNO, ACCEPTOR_LOGINID, ACCEPTOR_NAME, GMT_CREATE, GMT_MODIFIED) values ('fund_id00000000001', '632822197309081455', '2088102131952936', 'aohai.li@gmail.com', '一风', SYSDATE, SYSDATE)
+2014-20-03 15:15:17 [INFO ]- InvokeCommand              - hello world:Injector[bindings=[Key[type=java.util.logging.Logger, annotation=[none]]=BindingImpl[key=Key[type=java.util.logging.Logger, annotation=[none]], source=com.google.inject.Guice.createInjector(Guice.java:75), provider=Provider<Logger>], Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2DeleteSQLFormator)]=BindingImpl[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2DeleteSQLFormator)], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:60), provider=FactoryProxy[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2DeleteSQLFormator)], provider=com.google.inject.InjectorImpl$ImplicitBinding@9e21f52]], Key[type=com.google.inject.Stage, annotation=[none]]=BindingImpl[key=Key[type=com.google.inject.Stage, annotation=[none]], source=com.google.inject.Guice.createInjector(Guice.java:75), provider=ConstantFactory[value=DEVELOPMENT]], Key[type=org.oproject.banana.command.impl.InitDataCommand, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.command.impl.InitDataCommand, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:52), provider=FactoryProxy[key=Key[type=org.oproject.banana.command.impl.InitDataCommand, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@5c76458f]], Key[type=org.oproject.banana.command.impl.InitDataDefCommand, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.command.impl.InitDataDefCommand, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:53), provider=FactoryProxy[key=Key[type=org.oproject.banana.command.impl.InitDataDefCommand, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@58d0deb5]], Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2SelectSQLFormator)]=BindingImpl[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2SelectSQLFormator)], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:59), provider=FactoryProxy[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2SelectSQLFormator)], provider=com.google.inject.InjectorImpl$ImplicitBinding@78cd6aa0]], Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2InsertSQLFormator)]=BindingImpl[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2InsertSQLFormator)], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:58), provider=FactoryProxy[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=DataEntry2InsertSQLFormator)], provider=com.google.inject.InjectorImpl$ImplicitBinding@76136c55]], Key[type=org.oproject.banana.command.impl.CleanDataCommand, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.command.impl.CleanDataCommand, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:54), provider=FactoryProxy[key=Key[type=org.oproject.banana.command.impl.CleanDataCommand, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@752d7d02]], Key[type=javax.sql.DataSource, annotation=[none]]=BindingImpl[key=Key[type=javax.sql.DataSource, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.setDataSource(BananaModelForOracle.java:82), provider=ConstantFactory[value=com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 5, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 2tcpxo901poxfvy4gtc81|5d5bdc50, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> oracle.jdbc.OracleDriver, extensions -> [], factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 2tcpxo901poxfvy4gtc81|5d5bdc50, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:oracle:thin:@public2.devdb.alipay.net:1521:public2, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> [user=******, password=******], propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> [], usesTraditionalReflectiveProxies -> false ]]], Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=Table2JsonFormator)]=BindingImpl[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=Table2JsonFormator)], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:57), provider=FactoryProxy[key=Key[type=org.oproject.banana.text.Formator, annotation=@com.google.inject.name.Named(value=Table2JsonFormator)], provider=com.google.inject.InjectorImpl$ImplicitBinding@7d6a4a67]], Key[type=org.oproject.banana.text.Parser, annotation=@com.google.inject.name.Named(value=Json2DataEntryParser)]=BindingImpl[key=Key[type=org.oproject.banana.text.Parser, annotation=@com.google.inject.name.Named(value=Json2DataEntryParser)], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:62), provider=FactoryProxy[key=Key[type=org.oproject.banana.text.Parser, annotation=@com.google.inject.name.Named(value=Json2DataEntryParser)], provider=com.google.inject.InjectorImpl$ImplicitBinding@4d3af084]], Key[type=org.oproject.banana.db.TableDefinition, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.db.TableDefinition, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:50), provider=FactoryProxy[key=Key[type=org.oproject.banana.db.TableDefinition, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@588491b8]], Key[type=org.oproject.banana.command.impl.InvokeCommand, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.command.impl.InvokeCommand, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:55), provider=FactoryProxy[key=Key[type=org.oproject.banana.command.impl.InvokeCommand, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@677af46e]], Key[type=com.google.inject.Injector, annotation=[none]]=BindingImpl[key=Key[type=com.google.inject.Injector, annotation=[none]], source=com.google.inject.Guice.createInjector(Guice.java:75), provider=Provider<Injector>], Key[type=org.oproject.banana.db.SqlExecutor, annotation=[none]]=BindingImpl[key=Key[type=org.oproject.banana.db.SqlExecutor, annotation=[none]], source=org.oproject.banana.test.config.BananaModelForOracle.configure(BananaModelForOracle.java:49), provider=FactoryProxy[key=Key[type=org.oproject.banana.db.SqlExecutor, annotation=[none]], provider=com.google.inject.InjectorImpl$ImplicitBinding@394596d5]]]]
+2014-20-03 15:15:17 [DEBUG]- CheckDataCommand           - 查询[失败]:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
+2014-20-03 15:15:17 [WARN ]- CheckDataCommand           - 查询失败:select * from CS_CP_FUND where ID = 'fund_id00000000001' and STATUS = 'FAIL' and PAYER = 'ALIPAY' and COMPENSATION_ID = 'cp_id0000000000001' and COMP_ACCOUNT = '1' and TRANSFER_AMOUNT = 200 and SPEND_AMOUNT = 100 and PRECOMP_AMOUNT = 100 and FUND_TYPE = 'ALIPAY' 
