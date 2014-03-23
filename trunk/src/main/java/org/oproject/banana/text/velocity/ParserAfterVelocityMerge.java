@@ -4,10 +4,8 @@
 package org.oproject.banana.text.velocity;
 
 import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.net.URL;
-import java.net.URLDecoder;
 import java.util.Map;
+import java.util.Properties;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
@@ -30,13 +28,9 @@ public class ParserAfterVelocityMerge{
 	 * ≥ı ºªØvelocity
 	 */
 	static{
-		URL url = ClassLoader.getSystemResource("velocity.properties");
-		try {
-			String decodeurl = URLDecoder.decode(url.getFile(), "UTF-8");
-			Velocity.init(decodeurl);
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
+			Properties pros = new Properties();
+			pros.put("userdirective", "org.oproject.banana.text.velocity.directive.SQLExecutoryDirective");
+			Velocity.init(pros);
 //		Velocity.addProperty("executeSQL", "org.oproject.banana.text.velocity.directive.SQLExecutoryDirective");
 	}
 

@@ -10,7 +10,6 @@ import org.apache.log4j.Logger;
 import org.oproject.banana.command.Command;
 import org.oproject.banana.db.SqlExecutor;
 import org.oproject.banana.domain.db.data.DataEntry;
-import org.oproject.banana.exception.BananaException;
 import org.oproject.banana.text.Formator;
 import org.oproject.banana.text.Parser;
 import org.oproject.banana.text.velocity.ParserAfterVelocityMerge;
@@ -54,7 +53,7 @@ public class CheckDataCommand implements Command{
 	 * @param filePath
 	 */
 	@SuppressWarnings("unchecked")
-	public void exists(String filePath, Map<String, Object> content){
+	public boolean exists(String filePath, Map<String, Object> content){
 		String fileContent = FileTool.readFileContent(filePath);
 		
 		DataEntry de = ParserAfterVelocityMerge.parse(fileContent, content, parser);
@@ -70,8 +69,10 @@ public class CheckDataCommand implements Command{
 			
 			if(ret.isEmpty()){
 				logger.warn("查询失败:" + sql);
-				throw new BananaException("执行查询结果集合为空。");
+				return false;
 			}
 		}
+		
+		return true;
 	}
 }
