@@ -53,12 +53,14 @@ public class CleanDataCommand implements Command{
 	 * @param filePath
 	 */
 	@SuppressWarnings("unchecked")
-	public void clean(String filePath, Map<String, Object> content){
+	public boolean clean(String filePath, Map<String, Object> content){
 		String fileContent = FileTool.readFileContent(filePath);
 		
 		DataEntry de = ParserAfterVelocityMerge.parse(fileContent, content, parser);
 		
 		List<String> sqls = (List<String>)formator.format(de);
+		
+		boolean tag = true;
 		
 		for(String sql : sqls){
 			int ret = sqlExecutor.delete(sql);
@@ -66,6 +68,12 @@ public class CleanDataCommand implements Command{
 			if(logger.isDebugEnabled()){
 				logger.debug("É¾³ý[" + (ret == 1 ? "³É¹¦": "Ê§°Ü") + "]:" + sql);
 			}
+			
+			if(tag == true && ret < 1){
+				tag = false;
+			}
 		}
+		
+		return tag;
 	}
 }

@@ -19,43 +19,51 @@ import com.google.inject.Injector;
 
 /**
  * 执行
+ * 
  * @author aohai.li
  */
 public class InvokeCommand implements Command {
-	
+
 	/**
 	 * 日志对象
 	 */
 	private static final Logger logger = Logger.getLogger(InvokeCommand.class);
-	
+
 	/** 脚本类型 */
-    private static final String SCRIPT_TYPE = "groovy";
-	
-    private static final ScriptEngineManager factory = new ScriptEngineManager();
-	
-    @Inject
-    private static Injector injector;
-    
-    static{
-    	factory.registerEngineName(SCRIPT_TYPE, new GroovyScriptEngineFactory());
-    }
-    
+	private static final String SCRIPT_TYPE = "groovy";
+
+	private static final ScriptEngineManager factory = new ScriptEngineManager();
+
+	@Inject
+	private static Injector injector;
+
+	static {
+		factory.registerEngineName(SCRIPT_TYPE, new GroovyScriptEngineFactory());
+	}
+
 	/**
 	 * @param filePath
 	 * @param context
 	 */
-	public void invoke(String filePath, Map<String, Object> context){
+	public boolean invoke(String filePath, Map<String, Object> context) {
 		String fileContent = FileTool.readFileContent(filePath);
-		try{
-            ScriptEngine engine = factory.getEngineByName(SCRIPT_TYPE);
-            engine.put("logger", logger);
-            engine.put("context", context);
-            engine.put("injector", injector);
-            engine.eval(fileContent);
-        }catch (RuntimeException re){
-            logger.warn("执行失败", re);
-        } catch (ScriptException e) {
-            logger.warn("执行失败", e);
-        }
+		try {
+			ScriptEngine engine = factory.getEngineByName(SCRIPT_TYPE);
+			engine.put("logger", logger);
+			engine.put("context", context);
+			engine.put("injector", injector);
+			Object obj = engine.eval(fileContent);
+			if (Boolean.TRUE.equals(obj)) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (RuntimeException re) {
+			logger.warn("执行失败", re);
+			return false;
+		} catch (ScriptException e) {
+			logger.warn("执行失败", e);
+			return false;
+		}
 	}
 }

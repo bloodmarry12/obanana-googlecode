@@ -53,7 +53,7 @@ public class InitDataCommand implements Command{
 	 * @param filePath
 	 */
 	@SuppressWarnings("unchecked")
-	public void initData(String filePath, Map<String, Object> content){
+	public boolean initData(String filePath, Map<String, Object> content){
 		String fileContent = FileTool.readFileContent(filePath);
 		
 		DataEntry de = ParserAfterVelocityMerge.parse(fileContent, content, parser);
@@ -66,6 +66,12 @@ public class InitDataCommand implements Command{
 			if(logger.isDebugEnabled()){
 				logger.debug("≤Â»Î[" + (ret == 1 ? "≥…π¶": " ß∞‹") + "]:" + sql);
 			}
+			
+			if(ret < 1){
+				return false;
+			}
 		}
+		
+		return true;
 	}
 }

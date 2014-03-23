@@ -64,7 +64,6 @@ public class SQLExecutoryDirective extends Directive {
 		}
 		
 		String sqlStatement = String.valueOf(node.jjtGetChild(0).value(context));
-		
 		if(log.isDebugEnabled()){
 			log.debug("SQLºê²ÎÊý:" + sqlStatement);
 		}
