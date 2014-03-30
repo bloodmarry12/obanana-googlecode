@@ -29,7 +29,11 @@ public class ParserAfterVelocityMerge{
 	 */
 	static{
 			Properties pros = new Properties();
-			pros.put("userdirective", "org.oproject.banana.text.velocity.directive.SQLExecutoryDirective");
+			StringBuilder propsSB = new StringBuilder();
+			propsSB.append("org.oproject.banana.text.velocity.directive.SQLExecutoryDirective");
+			propsSB.append(",org.oproject.banana.text.velocity.directive.SQLSelectDirective");
+			propsSB.append(",org.oproject.banana.text.velocity.directive.SQLDeleteDirective");
+			pros.put("userdirective", propsSB.toString());
 			Velocity.init(pros);
 //		Velocity.addProperty("executeSQL", "org.oproject.banana.text.velocity.directive.SQLExecutoryDirective");
 	}
