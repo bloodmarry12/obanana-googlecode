@@ -24,7 +24,9 @@ import org.oproject.banana.text.json.Table2JsonFormator;
 import org.oproject.banana.text.sql.DataEntry2DeleteSQLFormator;
 import org.oproject.banana.text.sql.DataEntry2InsertSQLFormator;
 import org.oproject.banana.text.sql.DataEntry2SelectSQLFormator;
+import org.oproject.banana.text.velocity.directive.SQLDeleteDirective;
 import org.oproject.banana.text.velocity.directive.SQLExecutoryDirective;
+import org.oproject.banana.text.velocity.directive.SQLSelectDirective;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.name.Names;
@@ -62,6 +64,8 @@ public class BananaModelForOracle extends AbstractModule {
 		bind(Parser.class).annotatedWith(Names.named("Json2DataEntryParser")).to(Json2DataEntryParser.class);
 		
 		requestStaticInjection(SQLExecutoryDirective.class);
+		requestStaticInjection(SQLSelectDirective.class);
+		requestStaticInjection(SQLDeleteDirective.class);
 		requestStaticInjection(Banana.class);
 		requestStaticInjection(InvokeCommand.class);
 	}

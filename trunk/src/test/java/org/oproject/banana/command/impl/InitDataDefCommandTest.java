@@ -8,6 +8,6 @@ public class InitDataDefCommandTest extends AbstractBananaTester{
 	@Test
 	public void test_01(){
 		InitDataDefCommand init = context.getInstance(InitDataDefCommand.class);
-		init.sysoutDataTemplate(new String[]{"CS_CP_FUND", "CS_CP_ALIPAY_FUND", "CS_CP_BANK_FUND"});
+		init.sysoutDataTemplate(new String[]{"CS_CP_BILL_BATCH"});
 	}
 }
